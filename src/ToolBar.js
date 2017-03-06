@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Icon, Menu } from 'semantic-ui-react'
 
-export default class ToolBar extends Component {
+class ToolBar extends Component {
   state = { activeItem: 'calendar' }
 
   handleItemClick = (e, { name }) => this.setState({ activeItem: name })
