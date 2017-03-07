@@ -1,22 +1,22 @@
 import React, { Component } from 'react';
 import { Container } from 'semantic-ui-react'
 const Menu = require('./Menu.js');
-const ToolBar = require('./ToolBar.js');
+const ToggleTools = require('./ToggleTools.js');
 import './App.css';
 
 class App extends Component {
-  render() {
-    return (
-    	<div>
-    	<Container fluid>
-	      <div className="App">
-	        <Menu />
-	        <ToolBar />
-	      </div>
-	      </Container>
-	      </div>
-    );
-  }
+	render() {
+		return (
+			<div>
+				<Container fluid>
+					<div className="App">
+						<Menu />
+						<ToggleTools />
+					</div>
+				</Container>
+			</div>
+			);
+	}
 }
 
 export default App;
