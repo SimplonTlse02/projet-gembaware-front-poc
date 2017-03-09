@@ -6,6 +6,7 @@ const Middle = require('./Middle.js');
 const AccordionGrid = require('./AccordionGrid.js');
 
 
+
 import './App.css';
 
 class App extends Component {

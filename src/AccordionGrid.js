@@ -4,30 +4,31 @@ const AccordionFluid = require('./AccordionFluid.js');
 const FormSearch = require('./FormSearch.js');
 const ViewValue = require('./ViewValue.js');
 const BarChart = require('./BarChart.js');
+const ShowChartbarInfo = require('./ShowChartbarInfo.js');
+
 class AccordionGrid extends Component{  
 	render() { 
 		return(
-			  <Grid columns='equal'>
+			<Grid columns='equal'>
 			    <Grid.Column width={2}>
-			      <Segment>
-			      	<AccordionFluid />
-			      </Segment>
+				    <Segment>
+				      	<AccordionFluid />
+				    </Segment>
 			    </Grid.Column>
 			    <Grid.Column width={4} >
-			      <Segment>
-			      	<FormSearch />
-			      </Segment>
+			      	<Segment>
+			      		<FormSearch />
+			      	</Segment>
 			    </Grid.Column>
-			    <Grid.Column width={4} >
-			      <Segment>
-			      	<ViewValue />
-			      </Segment>
+			    <Grid.Column width={10} >
+			    	<Segment>
+			      		<ViewValue />
+			      		<BarChart />
+			      		<ShowChartbarInfo />
+			      	</Segment>
+
 			    </Grid.Column>
-			    <Segment>
-			      	<BarChart />
-			      </Segment>
-			    
-			  </Grid>
+			</Grid>
 		)
 	}
 }

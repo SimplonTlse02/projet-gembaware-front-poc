@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
 var Chart = require("react-chartjs-2").Bar
 
+
+
 var chartData = {
 	labels: ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin"],
 	datasets: [
 	{
-		label: "Dataset",
+		label: "Chiffre d'affaire",
 		backgroundColor: [
 		'rgba(255, 99, 132, 0.2)',
 		'rgba(54, 162, 235, 0.2)',
@@ -37,17 +39,15 @@ var chartOptions = {
 		}]
 	}
 }
+
+
 class BarChart extends Component{
 	render() {
-		return <Chart data={ chartData } options={ chartOptions } width="600" height="250"/>
+		return(
+			<Chart data={ chartData } options={ chartOptions } width="600" height="250"/>
+		)
 	}
 }
-
-// var BarChart = React.createClass({
-// 	render:function(){
-// 		return <Chart data={chartData} options={chartOptions} width="600" height="250" />
-// 	}
-// });
-
+console.log(chartData.datasets[0].data);
 
 module.exports = BarChart;
