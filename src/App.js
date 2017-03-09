@@ -4,7 +4,7 @@ const Menu = require('./Menu.js');
 const ToggleTools = require('./ToggleTools.js');
 const Middle = require('./Middle.js');
 const AccordionGrid = require('./AccordionGrid.js');
-
+const Soap = require('./soap.js');
 
 
 import './App.css';
