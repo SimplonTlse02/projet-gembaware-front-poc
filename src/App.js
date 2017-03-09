@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Container } from 'semantic-ui-react'
 const Menu = require('./Menu.js');
 const ToggleTools = require('./ToggleTools.js');
-const Middle = require('./Middle.js');
+// const Middle = require('./Middle.js');
 const AccordionGrid = require('./AccordionGrid.js');
 
 

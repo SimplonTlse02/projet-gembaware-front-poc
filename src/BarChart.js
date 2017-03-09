@@ -42,12 +42,14 @@ var chartOptions = {
 
 
 class BarChart extends Component{
+
 	render() {
 		return(
-			<Chart data={ chartData } options={ chartOptions } width="600" height="250"/>
+			<Chart data={ chartData } options={ chartOptions } 
+			width="600" height="250"/>
 		)
 	}
 }
-console.log(chartData.datasets[0].data);
 
+console.log(chartData);
 module.exports = BarChart;
