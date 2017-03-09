@@ -15,7 +15,12 @@ class FormSearch extends Component{
   }
 
   handleSubmit(event) {
-    alert('A name was submitted: ' + this.state.value);
+    
+    var valuInput = this.state.value;
+    document.getElementById('view').innerHTML = valuInput;
+    console.log(valuInput);
+    
+   
     event.preventDefault();
   }
 
@@ -24,10 +29,11 @@ class FormSearch extends Component{
       <Form onSubmit={this.handleSubmit}>
         <label>
           Rechercher:
-          <input type="text" value={this.state.value} onChange={this.handleChange} />
+          <input type="text" value={this.state.value} onChange={this.handleChange} id='inputVal' />
         </label>
         <Button type="submit" value="Submit">Valider
         </Button>
+        
       </Form>
     );
   }

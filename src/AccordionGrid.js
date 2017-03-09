@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import { Grid, Segment } from 'semantic-ui-react'
 const AccordionFluid = require('./AccordionFluid.js');
 const FormSearch = require('./FormSearch.js');
-
+const ViewValue = require('./ViewValue.js');
+const BarChart = require('./BarChart.js');
 class AccordionGrid extends Component{  
 	render() { 
 		return(
@@ -17,6 +18,14 @@ class AccordionGrid extends Component{
 			      	<FormSearch />
 			      </Segment>
 			    </Grid.Column>
+			    <Grid.Column width={4} >
+			      <Segment>
+			      	<ViewValue />
+			      </Segment>
+			    </Grid.Column>
+			    <Segment>
+			      	<BarChart />
+			      </Segment>
 			    
 			  </Grid>
 		)
