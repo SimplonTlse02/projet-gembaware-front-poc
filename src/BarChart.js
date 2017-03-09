@@ -45,7 +45,9 @@ var chartOptions = {
 
 class BarChart extends Component{
 	render() {
-		return <Chart data={ chartData } options={ chartOptions } width="600" height="250"/>
+		return(
+			<Chart data={ chartData } options={ chartOptions } width="600" height="250"/>
+		)
 	}
 }
 
