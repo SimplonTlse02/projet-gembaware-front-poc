@@ -5,6 +5,7 @@ const FormSearch = require('./FormSearch.js');
 const ViewValue = require('./ViewValue.js');
 const BarChart = require('./BarChart.js');
 const ShowChartbarInfo = require('./ShowChartbarInfo.js');
+const Dateform = require('./Dateform.js');
 
 class AccordionGrid extends Component{  
 	render() { 
@@ -22,6 +23,7 @@ class AccordionGrid extends Component{
 			    </Grid.Column>
 			    <Grid.Column width={10} >
 			    	<Segment>
+			    	<Dateform />
 			      		<ViewValue />
 			      		<BarChart />
 			      		<ShowChartbarInfo />
