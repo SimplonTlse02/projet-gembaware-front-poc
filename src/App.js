@@ -3,7 +3,6 @@ import { Container } from 'semantic-ui-react'
 const Menu = require('./Menu.js');
 const ToggleTools = require('./ToggleTools.js');
 const AccordionGrid = require('./AccordionGrid.js');
-const Soap = require('./soap.js');
 
 
 
