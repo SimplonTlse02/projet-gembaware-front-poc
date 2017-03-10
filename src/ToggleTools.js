@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Sidebar, Segment, Button, Menu, Image, Icon, Header } from 'semantic-ui-react'
+import { Sidebar, Segment, Button, Menu } from 'semantic-ui-react'
 const ToolBar = require('./ToolBar.js');
 
 class ToggleTools extends Component {

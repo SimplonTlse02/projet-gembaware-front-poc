@@ -66,9 +66,18 @@ function getElementsAtEvent(elems){
    
 
 class BarChart extends Component{
+handleClick(evt)
+{
+    var activeElement = chartData.getElementAtEvent(evt);
+    document.getElementById('view').innerHTML = activeElement;
+    console.log(activeElement);
+}
+
 	render() {
 		return(
+
 			<Chart data={ chartData } options={ chartOptions } onElementsClick={onElementsClick} getElementsAtEvent={getElementsAtEvent} width="600" height="250"/>
+
 
 		)
 	}
