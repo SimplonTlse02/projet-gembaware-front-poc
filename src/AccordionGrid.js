@@ -6,21 +6,35 @@ const ViewValue = require('./ViewValue.js');
 const BarChart = require('./BarChart.js');
 const ShowChartbarInfo = require('./ShowChartbarInfo.js');
 const Dateform = require('./Dateform.js');
+const GlobalInfo = require('./GlobalInfo.js');
+
 
 class AccordionGrid extends Component{  
 	render() { 
 		return(
 			<Grid columns='equal'>
 			    <Grid.Column width={2}>
-				    <Segment>
+			        <Segment>
 				      	<AccordionFluid />
 				    </Segment>
 			    </Grid.Column>
-			    <Grid.Column width={4} >
-			      	<Segment>
-			      		<FormSearch />
-			      	</Segment>
-			    </Grid.Column>
+			    <Grid container columns={3}>
+				    <Grid.Column width={4} >
+				      	<Segment>
+				      		<GlobalInfo />
+				      	</Segment>
+				    </Grid.Column>
+				     <Grid.Column width={4} >
+				      	<Segment>
+				      		<GlobalInfo />
+				      	</Segment>
+				    </Grid.Column>
+				     <Grid.Column width={4} >
+				      	<Segment>
+				      		<GlobalInfo />
+				      	</Segment>
+				    </Grid.Column>
+			    </Grid>
 			    <Grid.Column width={10} >
 			    	<Segment>
 			    	<Dateform />
@@ -28,7 +42,11 @@ class AccordionGrid extends Component{
 			      		<BarChart />
 			      		<ShowChartbarInfo />
 			      	</Segment>
-
+			    </Grid.Column>
+			    <Grid.Column width={4} >
+			      	<Segment>
+			      		<FormSearch />
+			      	</Segment>
 			    </Grid.Column>
 			</Grid>
 		)

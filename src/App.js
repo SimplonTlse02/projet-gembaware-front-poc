@@ -5,7 +5,6 @@ const ToggleTools = require('./ToggleTools.js');
 const AccordionGrid = require('./AccordionGrid.js');
 
 
-
 import './App.css';
 
 class App extends Component {
@@ -17,7 +16,6 @@ class App extends Component {
 						<Menu />
 						<ToggleTools />
 						<AccordionGrid />
-						
 					</div>
 				</Container>
 			</div>
