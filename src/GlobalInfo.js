@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
-import { Icon } from 'semantic-ui-react'
+import { Icon, Segment } from 'semantic-ui-react'
 class GlobalInfo extends Component{
 	render() {
 		return(
-			<div>
+			<Segment id='blockInfo' textAlign='center'> 
+				<h2>
+					<Icon name='arrow up' color='green'> 
+					</Icon>  {this.props.sum} €
+				</h2>
 				<h3>{this.props.text} </h3>
-				<h3><Icon name='arrow up' color='green'> </Icon>  {this.props.sum} € </h3>
-			</div>
+			</Segment>
 		)
 	}
 }

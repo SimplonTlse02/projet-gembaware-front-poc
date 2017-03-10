@@ -28,10 +28,23 @@ h1{
 .Button{
   color: white;
 }
-/*#barchart{
-  margin-bottom: 30em;
+#barchart{
+  width: 30em;
 }
-*/
+
 #factures{
   text-align: center;
+}
+#accordion{
+  height: 15em;
+}
+/*#info{
+  height: 10em;
+}*/
+#blockInfo{
+  background-color: red;
+  color: white;
+}
+#segmentData{
+  width: 100em;
 }
