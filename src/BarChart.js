@@ -55,11 +55,21 @@ var chartOptions = {
 	}
 }
 
+function onElementsClick(elems){
+    	console.log("elems");
+	
+}
+function getElementsAtEvent(elems){
+    	console.log(elems);
+	
+}
+   
 
 class BarChart extends Component{
 	render() {
 		return(
-			<Chart data={ chartData } options={ chartOptions } width="600" height="250"/>
+			<Chart data={ chartData } options={ chartOptions } onElementsClick={onElementsClick} getElementsAtEvent={getElementsAtEvent} width="600" height="250"/>
+
 		)
 	}
 }
