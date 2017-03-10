@@ -61,7 +61,7 @@ function onElementsClick(elems){
 }
 function getElementsAtEvent(elems){
     	console.log(elems);
-	
+    	console.log(elems[0]._index);
 }
    
 
