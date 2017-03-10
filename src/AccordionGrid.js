@@ -12,8 +12,7 @@ class AccordionGrid extends Component{
 		return(
 			<Grid columns='equal'>
 			    <Grid.Column width={2}>
-				<Grid container columns={2}>
-				    <Segment>
+			        <Segment>
 				      	<AccordionFluid />
 				    </Segment>
 			    </Grid.Column>
@@ -46,7 +45,6 @@ class AccordionGrid extends Component{
 			      		<FormSearch />
 			      	</Segment>
 			    </Grid.Column>
-			</Grid>
 			</Grid>
 		)
 	}
