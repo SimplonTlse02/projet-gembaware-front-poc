@@ -7,7 +7,6 @@ const BarChart = require('./BarChart.js');
 const ShowChartbarInfo = require('./ShowChartbarInfo.js');
 const Dateform = require('./Dateform.js');
 const GlobalInfo = require('./GlobalInfo.js');
-
 const PhoneInput = require('./PhoneInput.js');
 
 
@@ -65,6 +64,7 @@ state = { visible: false }
     </Grid.Column>
      <Grid.Row>
           <BarChart  />
+          
         </Grid.Row>
     	</Grid>
             </Segment>
@@ -76,7 +76,8 @@ state = { visible: false }
 
     
     
-		
+	 <Grid.Row><Segment><Dateform /></Segment></Grid.Row>
+        <Grid.Row><Segment><PhoneInput /></Segment></Grid.Row>	
 	
 		
   	</Grid>
