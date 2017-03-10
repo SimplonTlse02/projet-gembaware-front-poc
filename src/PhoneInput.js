@@ -6,7 +6,6 @@ class PhoneInput extends Component{
 	setCountry() {
     let userCountry = window.navigator.language;
     const prefixList = {
-	
       "en-US": "+011",
       "fr": "+336"
     }
@@ -14,22 +13,17 @@ class PhoneInput extends Component{
   }
 	render(){
 		return(
-			 
-          	
-
-        	<Form onSubmit={this.handleSubmit}>
+      <Form onSubmit={this.handleSubmit}>
         <label>Saisir numéro de téléphone :
 		        <Input
 		            id="phone-input"
 		            defaultValue={this.setCountry()} 
 		            type="phone">
-		         </Input>
+		        </Input>
         	</label>
-        <Button type="submit" value="Submit">Valider
-        </Button>
-        
+        <Button type="submit" value="Submit">Valider</Button>
       </Form>
-			)
+		)
 	}
 }
 module.exports = PhoneInput;

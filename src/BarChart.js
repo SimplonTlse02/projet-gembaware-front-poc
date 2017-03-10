@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 var Chart = require("react-chartjs-2").Bar
-var ModalInvoices = require("./ModalInvoices.js")
 
 var getInvoices = require("./getInvoicesFromXml.js");
 var orderInvoices = require("./orderInvoices.js");
