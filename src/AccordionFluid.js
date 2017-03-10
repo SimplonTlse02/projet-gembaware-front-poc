@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
-import { Accordion, Icon } from 'semantic-ui-react'
+import { Accordion, Icon, Segment } from 'semantic-ui-react'
 
 class AccordionFluid extends Component{
 
 	render(){ 
 		return(
+			
 			<Accordion>
 			    <Accordion.Title>
 			      <Icon name='dropdown' />
@@ -53,6 +54,7 @@ class AccordionFluid extends Component{
 			    </Accordion.Title>
 			   
 			</Accordion>
+			
 	  	)
 	}
 }
