@@ -11,7 +11,8 @@ const GlobalInfo = require('./GlobalInfo.js');
 const PhoneInput = require('./PhoneInput.js');
 
 
-class AccordionGrid extends Component{  
+class AccordionGrid extends Component{ 
+
 	render() { 
 		return(
 			<Grid columns='equal'>
