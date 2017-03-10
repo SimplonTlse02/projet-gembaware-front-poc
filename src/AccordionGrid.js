@@ -11,12 +11,14 @@ const GlobalInfo = require('./GlobalInfo.js');
 const PhoneInput = require('./PhoneInput.js');
 
 
+
 class AccordionGrid extends Component{
 state = { visible: false }
 
   toggleVisibility = () => this.setState({ visible: !this.state.visible })  
 	render() {
 	const { visible } = this.state 
+
 		return(
 			
   	<Grid stackable>

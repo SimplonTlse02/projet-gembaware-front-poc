@@ -9,11 +9,10 @@ module.exports = {
 		var allVal = xmlDoc.getElementsByTagName("val");
 		
 		var tab = [];
-		for (var i = 0; i < allVal.length; i++) {
-			
+		for (var i = 0; i < allVal.length; i++) {		
 			tab.push(allVal[i].textContent);
-
 		}
+		
 		this.transformToObject(tab);
 		return this.invoices;
 	},
@@ -32,7 +31,6 @@ module.exports = {
 				j++;
 			}
 		}
-	console.log(this.invoices);
 		return this.invoices;
 	}
 }

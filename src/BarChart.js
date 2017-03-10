@@ -56,22 +56,24 @@ var chartOptions = {
 }
 
 function onElementsClick(elems){
-    	console.log("elems");
-	
+    	if (elems.length !== 0) {
+    		document.location.href="details.html"
+    	}
 }
+
 function getElementsAtEvent(elems){
     	console.log(elems);
-    	document.location.href="details.html"
 }
    
 
 class BarChart extends Component{
-// handleClick(evt)
-// {
-//     var activeElement = chartData.getElementAtEvent(evt);
-//     document.getElementById('view').innerHTML = activeElement;
-//     console.log(activeElement);
-// }
+
+	// handleClick(evt)
+	// {
+	//     var activeElement = chartData.getElementAtEvent(evt);
+	//     document.getElementById('view').innerHTML = activeElement;
+	//     console.log(activeElement);
+	// }
 
 	render() {
 		return(
