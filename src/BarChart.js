@@ -61,24 +61,21 @@ function onElementsClick(elems){
 }
 function getElementsAtEvent(elems){
     	console.log(elems);
-    	console.log(elems[0]._index);
+    	document.location.href="details.html"
 }
    
 
 class BarChart extends Component{
-handleClick(evt)
-{
-    var activeElement = chartData.getElementAtEvent(evt);
-    document.getElementById('view').innerHTML = activeElement;
-    console.log(activeElement);
-}
+// handleClick(evt)
+// {
+//     var activeElement = chartData.getElementAtEvent(evt);
+//     document.getElementById('view').innerHTML = activeElement;
+//     console.log(activeElement);
+// }
 
 	render() {
 		return(
-
 			<Chart data={ chartData } options={ chartOptions } onElementsClick={onElementsClick} getElementsAtEvent={getElementsAtEvent} width="600" height="250"/>
-
-
 		)
 	}
 }
