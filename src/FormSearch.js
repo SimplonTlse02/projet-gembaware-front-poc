@@ -28,10 +28,13 @@ class FormSearch extends Component{
     return (
       <Form onSubmit={this.handleSubmit}>
         <label>
-          Rechercher:
-          <input type="text" value={this.state.value} onChange={this.handleChange} id='inputVal' />
+          <input type="text" 
+                value={this.state.value} 
+                onChange={this.handleChange} 
+                id='inputVal' 
+                placeholder='Rechercher' />
         </label>
-        <Button type="submit" value="Submit">Valider
+        <Button type="submit" value="Submit" fluid>Valider
         </Button>
         
       </Form>
