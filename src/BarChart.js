@@ -44,6 +44,12 @@ var chartOptions = {
 
 
 class BarChart extends Component{
+handleClick(evt)
+{
+    var activeElement = chartData.getElementAtEvent(evt);
+    document.getElementById('view').innerHTML = activeElement;
+    console.log(activeElement);
+}
 
 	render() {
 		return(
@@ -53,5 +59,4 @@ class BarChart extends Component{
 	}
 }
 
-console.log(chartData);
 module.exports = BarChart;
