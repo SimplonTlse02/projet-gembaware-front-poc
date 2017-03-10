@@ -17,7 +17,6 @@ class App extends Component {
 						<Menu />
 						<ToggleTools />
 						<AccordionGrid />
-						
 					</div>
 				</Container>
 			</div>
