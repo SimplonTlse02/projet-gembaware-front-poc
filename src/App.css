@@ -1,11 +1,17 @@
 body {
-  background-color:green;
+  background-color:#0995C6;
   color: black;
 }
 h1{
   font-size: 3em;
   text-align: left;
-  color: green;
+  color: #C4D837;
+}
+h2{
+  font-size: 4em;
+}
+h3{
+  text-align: center;
 }
 /*#configIcon{
   color: black;
@@ -13,6 +19,7 @@ h1{
 
 
 }*/
+
 #customerLogo{
   width: 10em;
 }
@@ -28,9 +35,9 @@ h1{
 .Button{
   color: white;
 }
-#barchart{
-  width: 30em;
-}
+/*#barchart{
+  width: 15em;
+}*/
 
 #factures{
   text-align: center;

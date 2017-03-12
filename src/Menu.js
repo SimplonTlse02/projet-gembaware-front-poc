@@ -6,7 +6,7 @@ const FormSearch = require('./FormSearch.js');
 class Menu extends Component{
 render(){
 return	(
-	    <Segment >
+	    <Segment id="menu" >
 	        <Grid columns={5} verticalAlign='middle'>
 	            <Grid.Row verticalAlign='top'>
 	                <Grid.Column id='customerLogo' >
@@ -17,8 +17,7 @@ return	(
 	                </Grid.Column>
 	                <Grid.Column></Grid.Column>
 	                <Grid.Column><FormSearch /></Grid.Column>
-	                <Grid.Column>
-	                	
+	                <Grid.Column>	
 	                    <IconSetting />
 	                </Grid.Column>
 	            </Grid.Row>

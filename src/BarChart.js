@@ -77,7 +77,12 @@ class BarChart extends Component{
 
 	render() {
 		return(
-			<Chart data={ chartData } options={ chartOptions } onElementsClick={onElementsClick} getElementsAtEvent={getElementsAtEvent} width="50" height="20"/>
+			<Chart 
+			data={ chartData } 
+			options={ chartOptions } 
+			onElementsClick={onElementsClick} 
+			getElementsAtEvent={getElementsAtEvent} 
+			width="400" height="100"/>
 		)
 	}
 }

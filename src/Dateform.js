@@ -17,10 +17,13 @@ class DateForm extends Component{
 	render(){
 	  	return (
 	  		<div>
+		        <input 
+		        	onChange={this.handleChange.bind(this)} 
+		        	defaultValue={this.state.format} 
+		        	id="date-input" />
 	  			<Moment locale="fr" format={this.state.format}></Moment>
-		        <div>
-		        	<input onChange={this.handleChange.bind(this)} defaultValue={this.state.format} id="date-input" />
-      			</div>
+		       
+      			
       		</div>
 	  	)
   	}

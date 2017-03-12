@@ -15,15 +15,15 @@ class SidebarLeftPush extends Component {
           <Sidebar as={Menu} animation='push' width='thin' visible={visible} icon='labeled' vertical inverted>
             <Menu.Item name='home'>
               <Icon name='home' />
-              Home
+              Factures Clients
             </Menu.Item>
             <Menu.Item name='gamepad'>
               <Icon name='gamepad' />
-              Games
+              Factures Fournisseurs
             </Menu.Item>
             <Menu.Item name='camera'>
               <Icon name='camera' />
-              Channels
+              Graphiques
             </Menu.Item>
           </Sidebar>
           <Sidebar.Pusher>
