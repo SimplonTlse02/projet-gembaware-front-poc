@@ -1,3 +1,19 @@
+Installation
+---
+Pré-requis : [NodeJS](https://nodejs.org/en/download/)
+
+```
+$ git clone https://github.com/SimplonTlse02/projet-gembaware-front-poc.git
+$ cd projet-gembaware-front-poc
+$ npm install
+```
+
+Pour lancer le projet :
+```
+$ npm start
+```
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
